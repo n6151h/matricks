@@ -13,7 +13,7 @@ the values in any given row are those obtained from the same probe location
 on the platform.  These are referred to as `expression profiles`.
 
 A dataset can be regarded as a table, such as this one (excerpted from
-the `Goodell dataset`_):
+the [Goodell dataset](http://www.bcm.edu/db/db_fac-goodell.htm):
 
 | probe_id | HSC 1 | HSC 2 | NK 1  | NK 2  | 
 | -------- | ----- | ----- | ----- | ----- |
@@ -25,9 +25,7 @@ the `Goodell dataset`_):
 | 45288    |  8.12 |  7.17 |  8.71 |  8.08 |
 | 45289    |  6.82 |  6.15 |  5.87 |  5.32 |
 | 45290    | 10.55 | 10.39 |  10.7 |  9.93 |
-
-
-.. _Goodell dataset: http://www.bcm.edu/db/db_fac-goodell.html
+l
 
 Expression datasets, with rare exception, are stored in text (i.e. flat) files
 that have the following format:
@@ -472,12 +470,12 @@ Example:
     ['Elmt_3401639', 'na', 7.23211276845, 1.682159, 6.95198458669, 6.96898611023, 6.68270691586, 6.69342317943]
     ['ELMT_3401644', 'na', 6.66459889061, 1.682159, 6.65469610536, 6.59303032509, 6.63139625302, 6.72401222705]
     ['ELMT_3401645', 'na', 9.48762418312, 1.682159, 8.8286277291, 7.66907923624, 8.4171269045, 6.65231345481]
-
+```
 
 DataTables
 ----------
 
-Support for `DataTables`_
+Support for [DataTables](http://www.datatables.net/)
 server-side processing
 is provided with the `dataTablesObject` method.  Invoking this will return
 a dictionary that has ``aaData``, ``aoColumns``, ``iTotalRecords``, and ``sColumns``
@@ -485,7 +483,6 @@ elements set in a way that is readily digestible by `DataTables`.  This can be c
 with ``offset=`` and ``limit=`` keyword arguments to further support server-side 
 pagination through large datasets.
 
-.. _DataTables: http://www.datatables.net/
 
 Retrieving Matricks Contents: Column Labels 
 -------------------------------------------
@@ -1422,15 +1419,13 @@ module:  `Choi`, and `GodelPositional`.
 **Choi scoring** is named after Dr. Jarny Choi, who first employed it as a 
 fast way to 
 score expression profiles in the genome exploration tool `GuIDE`, which
-he developed at the `Walter and Eliza Hall Institute`_
+he developed at the [Walter and Eliza Hall Institute](http://www.wehi.edu.au/)
 in 
 Melbourne.   It uses structured group notation 
 to specify low and high groups with each expression profile and then
 culls these into vectors from which the highest of the lows
 is subtracted from the lowest of the highs to obtain the score
 for that profile.
-
-.. _Walter and Eliza Hall Institute: http://www.wehi.edu.au/
 
 If no low or high is specified, the entire sample (label) list is used.
 
@@ -1644,12 +1639,11 @@ It is readily seen how similarly-shaped rows are now clustered together.
 ####Pearson Product Moment Correlation
 
 One of the calculations often performed with expression profiles is
-the `Pearson Product Moment Coefficient`_. We can supply any number of profile identifiers 
+the [Pearson Product Moment Coefficient](http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient).
+We can supply any number of profile identifiers 
 (probe IDs; not to be confused with sample names or labels)
 used to measure the degree to which a given profile correlates to other profiles
 within the dataset.
-
-.. _Pearson Product Moment Coefficient: http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient/
 
 and the result will be comprised of the same profile IDs as the parent instance, but the columns will
 be the PPMCs for each of the specified profiles.  For example::
