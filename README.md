@@ -25,7 +25,7 @@ the [Goodell dataset](http://www.bcm.edu/db/db_fac-goodell.htm):
 | 45288    |  8.12 |  7.17 |  8.71 |  8.08 |
 | 45289    |  6.82 |  6.15 |  5.87 |  5.32 |
 | 45290    | 10.55 | 10.39 |  10.7 |  9.93 |
-l
+
 
 Expression datasets, with rare exception, are stored in text (i.e. flat) files
 that have the following format:
