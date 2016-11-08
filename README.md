@@ -345,8 +345,7 @@ And, again, see that they're equal::
  >>> os.unlink('/tmp/matricks_doctest.tsv') 
 ```
 
-Pickling
-,,,,,,,,
+####Pickling
 
 `Matricks` instances can be pickled::
 
@@ -394,8 +393,7 @@ will be set to ``Matricks.arithmetic_mean`` when an instance is unpickled.  If s
 function had been specified when the instance was originally constructed, it will have to be
 explicitly reset to this after unpickling.
 
-JSON
-,,,,
+####JSON
 
 A convenience method -- ``json`` -- is provided that will return a simple rendition into
 string (JSON) format of the labels and data contained within a `Matricks` instance.
@@ -408,8 +406,7 @@ string (JSON) format of the labels and data contained within a `Matricks` instan
 
 ```
 
-GCT
-,,,
+####GCT
 
 
 GCT format is also supported.  Supply a file-like object to this method and it will
@@ -478,7 +475,7 @@ Example:
 
 
 DataTables
-,,,,,,,,,,
+----------
 
 Support for `DataTables`_
 server-side processing
@@ -864,8 +861,7 @@ a list of columns is provided, the result will have all but those columns in it.
       [9.48762418312 8.8286277291 7.66907923624 6.65231345481]]
 ```
 
-Selecting Rows
-,,,,,,,,,,,,,,
+####Selecting Rows
 
 One or more rows may be extracted from a `Matricks` instance by using the `extractRows` method,
 passing it a string or sequence listing the key column value(s) for the row(s) of interest.  This returns
@@ -1298,8 +1294,7 @@ Analyzing Matricks Data
 and filtering of the data they contain.  These include tools for sorting, scoring
 and determining statistical correlation between profiles.
 
-Sorting
-,,,,,,,
+####Sorting
 
 The output of the examples so far has been unsorted.   In nearly all cases, however,
 the user will want to order the results.
@@ -1351,8 +1346,7 @@ for which this was originally written was typically concerned with higher values
 or analysis results.  Specifying ``reversed=False`` in the keyword arguments to the `sorted` method
 will cause it to return results ordered low-to-high.
 
-Aggregation
-,,,,,,,,,,,
+####Aggregation
 
 Datasets often contain columns that are closely related and which can be aggregated together
 somehow into a single column.      
@@ -1409,8 +1403,7 @@ correspond, positionally, to the labels::
     ['ELMT_3401645', 8.4171269045, 5.58489159156, 6.65231345481, 8.8286277291, 7.66907923624]
 ```
 
-Scoring
-,,,,,,,,,,,,
+####Scoring
 
 The `scored` method supports the creation of a score for each row in the instance
 which can  then be used to sort or  ignore the rows to create a set of rows that
@@ -1648,8 +1641,7 @@ It is readily seen how similarly-shaped rows are now clustered together.
 
 ```
 
-Pearson Product Moment Correlation
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+####Pearson Product Moment Correlation
 
 One of the calculations often performed with expression profiles is
 the `Pearson Product Moment Coefficient`_. We can supply any number of profile identifiers 
@@ -1773,8 +1765,7 @@ in the constructor, or by invoking the `purge` method::
     ['ELMT_3401644', 0.9975119140885805]
 ```
 
- Distance
- ,,,,,,,,
+####Distance
 
 The `distance` method will return the distance between two rows in a `Matricks` instance
 as calculated by the selected function.  The default distance function is the 
@@ -1810,8 +1801,7 @@ Here are several examples::
     2.1228
 ```
 
-Detection Summary
-,,,,,,,,,,,,,,,,,
+####Detection Summary
 
 If we want to know which samples contain values that fall above some threshhold, we can use the
 `detection_summary` method.   The algorithm this uses is as follows:
