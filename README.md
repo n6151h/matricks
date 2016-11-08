@@ -15,7 +15,6 @@ on the platform.  These are referred to as `expression profiles`.
 A dataset can be regarded as a table, such as this one (excerpted from
 the `Goodell dataset`_):
 
- |----------|-------|-------|-------|-------|
  | probe_id | HSC 1 | HSC 2 | NK 1  | NK 2  | 
  |----------|-------|-------|-------|-------|
  | 45283    | 10.14 |  9.31 |   8.9 |  8.78 |
@@ -33,7 +32,6 @@ the `Goodell dataset`_):
  | 45289    |  6.82 |  6.15 |  5.87 |  5.32 |
  |----------|-------|-------|-------|-------|
  | 45290    | 10.55 | 10.39 |  10.7 |  9.93 |
- |----------|-------|-------|-------|-------|
 
 
 .. _Goodell dataset: http://www.bcm.edu/db/db_fac-goodell.html
